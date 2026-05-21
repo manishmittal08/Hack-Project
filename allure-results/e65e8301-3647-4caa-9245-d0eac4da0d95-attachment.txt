@@ -1,0 +1,19 @@
+Navigating to Justdial Portal...
+Validating Core UI brand headers & titles...
+Checking Global Search Box UI attributes...
+Search Box Element Styles Extracted: {
+  width: '491.667px',
+  height: '48.6667px',
+  borderRadius: '0px',
+  borderStyle: 'none'
+}
+Navigating to Free Listing page for form checking...
+Navigation triggered via click
+Asserting form elements and input styles...
+Mobile Input Box Typography Specs: {
+  fontSize: '20px',
+  fontWeight: '500',
+  fontFamily: 'Poppins, sans-serif',
+  padding: '10px 10px 10px 12px'
+}
+Error Label CSS Text Color: rgb(235, 80, 75)

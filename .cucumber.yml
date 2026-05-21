@@ -1,0 +1,1 @@
+default: features/**/*.feature --require-module @babel/register --require features/step_definations/**/*.js --format progress-bar --format html:test-results/cucumber-report.html

@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","45850","Justdial - Continuous Integrated E2E POM Flow","chromium","2026-05-21","passed","2026-05-21","","justdial_hackathon.spec.js","",""
+"","880","TC-01: Should parse search suggestions for text autocomplete parameters","chromium","2026-05-21","passed","2026-05-21","Justdial Production API Integration Tests","apiTesting.spec.js","",""
+"","21954","Validate Titles, Headings, Visibility, and Input CSS Properties","chromium","2026-05-21","passed","2026-05-21","Justdial UI Component & CSS Style Validation Pack","uiTesting.spec.js","",""
+"","988","TC-03: Validate programmatic metadata configuration for wellness verticals","chromium","2026-05-21","passed","2026-05-21","Justdial Production API Integration Tests","apiTesting.spec.js","",""
+"","683","TC-02: Should pull target business results for Car Wash services","chromium","2026-05-21","passed","2026-05-21","Justdial Production API Integration Tests","apiTesting.spec.js","",""

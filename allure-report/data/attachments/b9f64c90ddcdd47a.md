@@ -1,0 +1,1464 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: justdial_hackathon.spec.js >> Justdial - Continuous Integrated E2E POM Flow
+- Location: tests\justdial_hackathon.spec.js:12:5
+
+# Error details
+
+```
+Test timeout of 100000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - img "jd"
+  - generic [ref=e4]:
+    - button "Skip to main content" [ref=e5] [cursor=pointer]
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Justdial" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "Justdial" [ref=e11]
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - combobox "Select Location" [ref=e17]: Kismat Nagar-Kurla West, Mumbai
+            - listbox "City Auto-suggest"
+          - search [ref=e19]:
+            - generic [ref=e20]:
+              - generic [ref=e21]:
+                - combobox "Search" [expanded] [active] [ref=e22]
+                - status [ref=e23]: 13results found
+                - listbox "Main Auto-suggest" [ref=e24]:
+                  - generic [ref=e25]:
+                    - generic [ref=e26]:
+                      - generic [ref=e28]:
+                        - generic [ref=e29]: Recent Searches
+                        - generic [ref=e30] [cursor=pointer]: Clear All
+                      - listbox [ref=e31]:
+                        - option "Car Service Centres Category" [ref=e32]:
+                          - generic [ref=e35] [cursor=pointer]:
+                            - text: Car Service Centres
+                            - text: Category
+                        - option "Gyms Near Me Category" [ref=e36]:
+                          - generic [ref=e39] [cursor=pointer]:
+                            - text: Gyms Near Me
+                            - text: Category
+                        - option "Car Wash Services Category" [ref=e40]:
+                          - generic [ref=e43] [cursor=pointer]:
+                            - text: Car Wash Services
+                            - text: Category
+                    - generic [ref=e44]:
+                      - generic [ref=e47]: Trending Searches
+                      - listbox [ref=e48]:
+                        - option "Real Estate Agents Category" [ref=e49]:
+                          - generic [ref=e50] [cursor=pointer]:
+                            - img [ref=e52]
+                            - generic [ref=e53]:
+                              - text: Real Estate Agents
+                              - text: Category
+                        - option "Banquet Halls Category" [ref=e54]:
+                          - generic [ref=e55] [cursor=pointer]:
+                            - img [ref=e57]
+                            - generic [ref=e58]:
+                              - text: Banquet Halls
+                              - text: Category
+                        - option "Dentists Category" [ref=e59]:
+                          - generic [ref=e60] [cursor=pointer]:
+                            - img [ref=e62]
+                            - generic [ref=e63]:
+                              - text: Dentists
+                              - text: Category
+                        - option "Gynaecologist & Obstetrician Doctors Category" [ref=e64]:
+                          - generic [ref=e65] [cursor=pointer]:
+                            - img [ref=e67]
+                            - generic [ref=e68]:
+                              - text: Gynaecologist & Obstetrician Doctors
+                              - text: Category
+                        - option "Orthopaedic Doctors Category" [ref=e69]:
+                          - generic [ref=e70] [cursor=pointer]:
+                            - img [ref=e72]
+                            - generic [ref=e73]:
+                              - text: Orthopaedic Doctors
+                              - text: Category
+                        - option "Car Rental Category" [ref=e74]:
+                          - generic [ref=e75] [cursor=pointer]:
+                            - img [ref=e77]
+                            - generic [ref=e78]:
+                              - text: Car Rental
+                              - text: Category
+                        - option "Physiotherapists Category" [ref=e79]:
+                          - generic [ref=e80] [cursor=pointer]:
+                            - img [ref=e82]
+                            - generic [ref=e83]:
+                              - text: Physiotherapists
+                              - text: Category
+                        - option "Caterers Category" [ref=e84]:
+                          - generic [ref=e85] [cursor=pointer]:
+                            - img [ref=e87]
+                            - generic [ref=e88]:
+                              - text: Caterers
+                              - text: Category
+                        - option "Interior Designers Category" [ref=e89]:
+                          - generic [ref=e90] [cursor=pointer]:
+                            - img [ref=e92]
+                            - generic [ref=e93]:
+                              - text: Interior Designers
+                              - text: Category
+                        - option "Estate Agents For Residential Rental Category" [ref=e94]:
+                          - generic [ref=e95] [cursor=pointer]:
+                            - img [ref=e97]
+                            - generic [ref=e98]:
+                              - text: Estate Agents For Residential Rental
+                              - text: Category
+              - button "Search by voice" [ref=e99] [cursor=pointer]
+              - button "search" [ref=e100] [cursor=pointer]
+        - list [ref=e104]:
+          - listitem [ref=e105]:
+            - generic [ref=e106]: Select Langauge
+            - combobox "Select Langauge" [ref=e107] [cursor=pointer]:
+              - generic [ref=e108]: E N
+          - listitem [ref=e109]:
+            - link "We are Hiring" [ref=e110] [cursor=pointer]:
+              - /url: https://www.justdial.com/cms/career-opportunities
+              - generic [ref=e111]: We are Hiring
+          - listitem [ref=e112]:
+            - link "Investor Relations" [ref=e113] [cursor=pointer]:
+              - /url: https://www.justdial.com/cms/investor-relations
+              - generic [ref=e114]: Investor Relations
+          - listitem [ref=e115]:
+            - link "lead" [ref=e116] [cursor=pointer]:
+              - /url: https://wap.justdial.com/analytics/leaddashboard?nh=1&hide_header=1&m=1&old=1&source=77&wap=77&ntfcnclick=77&link_ref=web_home_header
+              - img "lead" [ref=e117]
+          - listitem [ref=e120]:
+            - link "Advertise" [ref=e121] [cursor=pointer]:
+              - /url: https://www.justdial.com/Advertise?cta_from=W_hmpge_web_header_advertise
+              - generic [ref=e123]: Advertise
+          - listitem [ref=e124]:
+            - link "Free Listing Business" [ref=e125] [cursor=pointer]:
+              - /url: https://www.justdial.com/Free-Listing?cta_from=W_hmpge_web_header_freelisting
+              - generic [ref=e127]: Free Listing
+              - generic [ref=e128]: Business
+          - listitem "notification" [ref=e129]
+          - listitem [ref=e132]:
+            - button "Login/Sign Up" [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]: Login / Sign Up
+      - region "Search Across 5.3 Crore+ Businesses" [ref=e136]:
+        - generic [ref=e137]:
+          - generic [ref=e138]: Search across
+          - generic [ref=e139]:
+            - generic [ref=e140]: ‘5.3 Crore+‘ Businesses
+            - generic [ref=e141]: ‘ 5.9 Crore+’ Products & Services
+          - list [ref=e143]:
+            - listitem
+            - listitem
+        - link "Download App" [ref=e144] [cursor=pointer]:
+          - /url: /JD-ON-MOBILE
+          - generic [ref=e145]: Download App
+    - generic [ref=e149]:
+      - link "Free Listing" [ref=e150] [cursor=pointer]:
+        - /url: https://www.justdial.com/Free-Listing?cta_from=W_hmpge_web_footer_ql_listing
+      - link "Advertise" [ref=e151] [cursor=pointer]:
+        - /url: https://www.justdial.com/Advertise?cta_from=W_hmpge_web_footer_ql_advertise
+    - main [ref=e152]:
+      - heading "One-Stop for All Local Businesses, Services, & Stores Nearby Across India" [level=1] [ref=e153]
+      - generic [ref=e155]:
+        - banner "slider" [ref=e156]:
+          - listitem [ref=e157] [cursor=pointer]:
+            - generic [ref=e158]:
+              - list:
+                - button "Get Loans Against Property, At a competative interest rate starting from 9 percent from jio finance limited , Apply Now" [ref=e159]:
+                  - generic "Get Loans Against Property, At a competative interest rate starting from 9 percent from jio finance limited , Apply Now" [ref=e160]:
+                    - img "Get Loans Against Property, At a competative interest rate starting from 9 percent from jio finance limited , Apply Now" [ref=e161]
+                - button [ref=e162]:
+                  - img [ref=e164]
+                - button [ref=e165]:
+                  - img [ref=e167]
+                - button [ref=e168]:
+                  - img [ref=e170]
+                - button [ref=e171]:
+                  - img [ref=e173]
+                - button [ref=e174]:
+                  - img [ref=e176]
+                - button [ref=e177]:
+                  - img [ref=e179]
+                - button [ref=e180]:
+                  - img [ref=e182]
+              - generic "slider" [ref=e183]:
+                - banner "jio" [ref=e184]
+                - banner "ipl" [ref=e185]
+                - banner "Hotels" [ref=e186]
+                - banner "Packers Movers" [ref=e187]
+                - banner "CCTV" [ref=e188]
+                - banner "Interior Designer" [ref=e189]
+                - banner "Bills" [ref=e190]
+                - banner "Flight" [ref=e191]
+          - listitem [ref=e192] [cursor=pointer]:
+            - link "B2B, Quick Quotes" [ref=e193]:
+              - /url: /jdmart?searchfrom=web_index&wap=77&source=77&jdtracker=internaljd_mainhmpge_b2bhotkey-77
+              - generic [ref=e194]: B2B
+              - generic [ref=e195]: Quick Quotes
+              - generic [ref=e196]:
+                - generic: Explore
+              - img "JDmart - B2B marketplace" [ref=e199]
+          - listitem [ref=e200] [cursor=pointer]:
+            - link "REPAIRS & SERVICES, Get Nearest Vendor" [ref=e201]:
+              - /url: /Mumbai/Repairs-Services/fil-59
+              - generic [ref=e202]: REPAIRS & SERVICES
+              - generic [ref=e203]: Get Nearest Vendor
+              - generic [ref=e204]:
+                - generic: Explore
+              - img "REPAIRS & SERVICES in Mumbai" [ref=e207]
+          - listitem [ref=e208] [cursor=pointer]:
+            - link "REAL ESTATE, Finest Agents" [ref=e209]:
+              - /url: /Mumbai/Estate-Agents-in-Kismat-Nagar-Kurla-West/nct-10192623
+              - generic [ref=e210]: REAL ESTATE
+              - generic [ref=e211]: Finest Agents
+              - generic [ref=e212]:
+                - generic: Explore
+              - img "REAL ESTATE in Mumbai" [ref=e215]
+          - listitem [ref=e216] [cursor=pointer]:
+            - link "DOCTORS, Book Now" [ref=e217]:
+              - /url: /Mumbai/Doctors/fil-57
+              - generic [ref=e218]: DOCTORS
+              - generic [ref=e219]: Book Now
+              - generic [ref=e220]:
+                - generic: Explore
+              - img "DOCTORS in Mumbai" [ref=e223]
+        - list [ref=e226]:
+          - listitem [ref=e227] [cursor=pointer]:
+            - link "Restaurants in Mumbai Restaurants" [ref=e228]:
+              - /url: /Mumbai/Restaurant-Collections
+              - generic [ref=e230]:
+                - img [ref=e232]
+                - img "Restaurants in Mumbai" [ref=e233]
+              - generic [ref=e234]: Restaurants
+          - listitem [ref=e235] [cursor=pointer]:
+            - link "Hotels in Mumbai Hotels" [ref=e236]:
+              - /url: /Mumbai/Hotels-in-Kismat-Nagar-Kurla-West/nct-10255012
+              - generic [ref=e238]:
+                - img [ref=e240]
+                - img "Hotels in Mumbai" [ref=e241]
+              - generic [ref=e242]: Hotels
+          - listitem [ref=e243] [cursor=pointer]:
+            - link "Beauty Spa in Mumbai Beauty Spa" [ref=e244]:
+              - /url: /Mumbai/Beauty/fil-264
+              - generic [ref=e246]:
+                - img [ref=e248]
+                - img "Beauty Spa in Mumbai" [ref=e249]
+              - generic [ref=e250]: Beauty Spa
+          - listitem [ref=e251] [cursor=pointer]:
+            - link "Home Decor in Mumbai Home Decor" [ref=e252]:
+              - /url: /Mumbai/Home-Decor/fil-297
+              - generic [ref=e254]:
+                - img [ref=e256]
+                - img "Home Decor in Mumbai" [ref=e257]
+              - generic [ref=e258]: Home Decor
+          - listitem [ref=e259] [cursor=pointer]:
+            - link "Wedding Wedding Planning" [ref=e260]:
+              - /url: /Mumbai/Wedding-Planning/tid-40
+              - generic [ref=e262]:
+                - img [ref=e264]
+                - img "Wedding" [ref=e265]
+              - generic [ref=e266]: Wedding Planning
+          - listitem [ref=e267] [cursor=pointer]:
+            - link "Education in Mumbai Education" [ref=e268]:
+              - /url: /Mumbai/Education/fil-58
+              - generic [ref=e270]:
+                - img [ref=e272]
+                - img "Education in Mumbai" [ref=e273]
+              - generic [ref=e274]: Education
+          - listitem [ref=e275] [cursor=pointer]:
+            - link "Rent & Hire in Mumbai Rent & Hire" [ref=e276]:
+              - /url: /Mumbai/Rent-Hire/fil-279
+              - generic [ref=e278]:
+                - img [ref=e280]
+                - img "Rent & Hire in Mumbai" [ref=e281]
+              - generic [ref=e282]: Rent & Hire
+          - listitem [ref=e283] [cursor=pointer]:
+            - link "Hospitals in Mumbai Hospitals" [ref=e284]:
+              - /url: /Mumbai/Hospitals/fil-70
+              - generic [ref=e286]:
+                - img [ref=e288]
+                - img "Hospitals in Mumbai" [ref=e289]
+              - generic [ref=e290]: Hospitals
+          - listitem [ref=e291] [cursor=pointer]:
+            - link "Contractors in Mumbai Contractors" [ref=e292]:
+              - /url: /Mumbai/Contractors/fil-312
+              - generic [ref=e294]:
+                - img [ref=e296]
+                - img "Contractors in Mumbai" [ref=e297]
+              - generic [ref=e298]: Contractors
+          - listitem [ref=e299] [cursor=pointer]:
+            - link "Pet Shops in Mumbai Pet Shops" [ref=e300]:
+              - /url: /Mumbai/Pet-Shops-in-Kismat-Nagar-Kurla-West/nct-10360322
+              - generic [ref=e302]:
+                - img [ref=e304]
+                - img "Pet Shops in Mumbai" [ref=e305]
+              - generic [ref=e306]: Pet Shops
+          - listitem [ref=e307] [cursor=pointer]:
+            - link "PG/Hostels in Mumbai PG/Hostels" [ref=e308]:
+              - /url: /Mumbai/Paying-Guest-Accommodations/fil-506
+              - generic [ref=e310]:
+                - img [ref=e312]
+                - img "PG/Hostels in Mumbai" [ref=e313]
+              - generic [ref=e314]: PG/Hostels
+          - listitem [ref=e315] [cursor=pointer]:
+            - link "Estate Agent in Mumbai Estate Agent" [ref=e316]:
+              - /url: /Mumbai/Estate-Agents/fil-88
+              - generic [ref=e318]:
+                - img [ref=e320]
+                - img "Estate Agent in Mumbai" [ref=e321]
+              - generic [ref=e322]: Estate Agent
+          - listitem [ref=e323] [cursor=pointer]:
+            - link "Dentists in Mumbai Dentists" [ref=e324]:
+              - /url: /Mumbai/Dentists-in-Kismat-Nagar-Kurla-West/nct-10156331
+              - generic [ref=e326]:
+                - img [ref=e328]
+                - img "Dentists in Mumbai" [ref=e329]
+              - generic [ref=e330]: Dentists
+          - listitem [ref=e331] [cursor=pointer]:
+            - link "Gym in Mumbai Gym" [ref=e332]:
+              - /url: /Mumbai/Gyms-in-Kismat-Nagar-Kurla-West/nct-11575244
+              - generic [ref=e334]:
+                - img [ref=e336]
+                - img "Gym in Mumbai" [ref=e337]
+              - generic [ref=e338]: Gym
+          - listitem [ref=e339] [cursor=pointer]:
+            - link "Loans in Mumbai Loans" [ref=e340]:
+              - /url: /loans?city=mumbai
+              - generic [ref=e342]:
+                - img [ref=e344]
+                - img "Loans in Mumbai" [ref=e345]
+              - generic [ref=e346]: Loans
+          - listitem [ref=e347] [cursor=pointer]:
+            - link "Event Organisers in Mumbai Event Organisers" [ref=e348]:
+              - /url: /Mumbai/Event-Organizers/fil-272
+              - generic [ref=e350]:
+                - img [ref=e352]
+                - img "Event Organisers in Mumbai" [ref=e353]
+              - generic [ref=e354]: Event Organisers
+          - listitem [ref=e355] [cursor=pointer]:
+            - link "Driving Schools in Mumbai Driving Schools" [ref=e356]:
+              - /url: /Mumbai/Driving-Schools-in-Kismat-Nagar-Kurla-West/nct-10329591
+              - generic [ref=e358]:
+                - img [ref=e360]
+                - img "Driving Schools in Mumbai" [ref=e361]
+              - generic [ref=e362]: Driving Schools
+          - listitem [ref=e363] [cursor=pointer]:
+            - link "Packers & Movers in Mumbai Packers & Movers" [ref=e364]:
+              - /url: /Mumbai/Packers-And-Movers/fil-237
+              - generic [ref=e366]:
+                - img [ref=e368]
+                - img "Packers & Movers in Mumbai" [ref=e369]
+              - generic [ref=e370]: Packers & Movers
+          - listitem [ref=e371] [cursor=pointer]:
+            - link "Courier Service in Mumbai Courier Service" [ref=e372]:
+              - /url: /Mumbai/Courier/fil-262
+              - generic [ref=e374]:
+                - img [ref=e376]
+                - img "Courier Service in Mumbai" [ref=e377]
+              - generic [ref=e378]: Courier Service
+          - button "Popular categories" [ref=e380] [cursor=pointer]:
+            - generic [ref=e381]: Popular Categories
+        - list [ref=e383]:
+          - listitem [ref=e384] [cursor=pointer]:
+            - link "Wedding Requisites" [ref=e385]:
+              - /url: /Mumbai/Wedding-Planning/tid-40
+              - heading "Wedding Requisites" [level=2] [ref=e386]
+            - list [ref=e387]:
+              - listitem [ref=e388]:
+                - link "Banquet Halls in Mumbai Banquet Halls" [ref=e389]:
+                  - /url: /Mumbai/Banquet-Halls-in-Kismat-Nagar-Kurla-West/nct-10035861
+                  - generic [ref=e391]:
+                    - img [ref=e393]
+                    - img "Banquet Halls in Mumbai" [ref=e394]
+                  - generic [ref=e395]: Banquet Halls
+              - listitem [ref=e396]:
+                - link "Bridal Requisite in Mumbai Bridal Requisite" [ref=e397]:
+                  - /url: /Mumbai/Bridal-Requisites-in-Kismat-Nagar-Kurla-West/fil-307-12930
+                  - generic [ref=e399]:
+                    - img [ref=e401]
+                    - img "Bridal Requisite in Mumbai" [ref=e402]
+                  - generic [ref=e403]: Bridal Requisite
+              - listitem [ref=e404]:
+                - link "Caterers in Mumbai Caterers" [ref=e405]:
+                  - /url: /Mumbai/Caterer/fil-275
+                  - generic [ref=e407]:
+                    - img [ref=e409]
+                    - img "Caterers in Mumbai" [ref=e410]
+                  - generic [ref=e411]: Caterers
+          - listitem [ref=e412] [cursor=pointer]:
+            - link "Beauty & Spa" [ref=e413]:
+              - /url: Mumbai/264/Personal-Care_fil
+              - heading "Beauty & Spa" [level=2] [ref=e414]
+            - list [ref=e415]:
+              - listitem [ref=e416]:
+                - link "Beauty Parlours in Mumbai Beauty Parlours" [ref=e417]:
+                  - /url: /Mumbai/Beauty-Parlours-in-Kismat-Nagar-Kurla-West/fil-264-14117
+                  - generic [ref=e419]:
+                    - img [ref=e421]
+                    - img "Beauty Parlours in Mumbai" [ref=e422]
+                  - generic [ref=e423]: Beauty Parlours
+              - listitem [ref=e424]:
+                - link "Spa & Massages in Mumbai Spa & Massages" [ref=e425]:
+                  - /url: /Mumbai/Spas/fil-264-15302
+                  - generic [ref=e427]:
+                    - img [ref=e429]
+                    - img "Spa & Massages in Mumbai" [ref=e430]
+                  - generic [ref=e431]: Spa & Massages
+              - listitem [ref=e432]:
+                - link "Salons in Mumbai Salons" [ref=e433]:
+                  - /url: /Mumbai/Salons-in-Kismat-Nagar-Kurla-West/fil-264-11474
+                  - generic [ref=e435]:
+                    - img [ref=e437]
+                    - img "Salons in Mumbai" [ref=e438]
+                  - generic [ref=e439]: Salons
+          - listitem [ref=e440] [cursor=pointer]:
+            - link "Repairs & Services" [ref=e441]:
+              - /url: Mumbai/59/Repairs-Services_fil
+              - heading "Repairs & Services" [level=2] [ref=e442]
+            - list [ref=e443]:
+              - listitem [ref=e444]:
+                - link "AC Service in Mumbai AC Service" [ref=e445]:
+                  - /url: /Mumbai/AC/fil-59-12781
+                  - generic [ref=e447]:
+                    - img [ref=e449]
+                    - img "AC Service in Mumbai" [ref=e450]
+                  - generic [ref=e451]: AC Service
+              - listitem [ref=e452]:
+                - link "Car Service in Mumbai Car Service" [ref=e453]:
+                  - /url: /Mumbai/Car-Repair-Services/fil-59-5210
+                  - generic [ref=e455]:
+                    - img [ref=e457]
+                    - img "Car Service in Mumbai" [ref=e458]
+                  - generic [ref=e459]: Car Service
+              - listitem [ref=e460]:
+                - link "Bike Service in Mumbai Bike Service" [ref=e461]:
+                  - /url: /Mumbai/Motorcycle-Repair-Services/fil-59-5203
+                  - generic [ref=e463]:
+                    - img [ref=e465]
+                    - img "Bike Service in Mumbai" [ref=e466]
+                  - generic [ref=e467]: Bike Service
+          - listitem [ref=e468] [cursor=pointer]:
+            - link "Daily Needs" [ref=e469]:
+              - /url: Mumbai/278/Daily-Needs_fil
+              - heading "Daily Needs" [level=2] [ref=e470]
+            - list [ref=e471]:
+              - listitem [ref=e472]:
+                - link "category_images Movies" [ref=e473]:
+                  - /url: /Mumbai/Movies
+                  - generic [ref=e475]:
+                    - img [ref=e477]
+                    - img "category_images" [ref=e478]
+                  - generic [ref=e479]: Movies
+              - listitem [ref=e480]:
+                - link "Grocery in Mumbai Grocery" [ref=e481]:
+                  - /url: /Mumbai/Grocery-Stores-in-Kismat-Nagar-Kurla-West/nct-10237947
+                  - generic [ref=e483]:
+                    - img [ref=e485]
+                    - img "Grocery in Mumbai" [ref=e486]
+                  - generic [ref=e487]: Grocery
+              - listitem [ref=e488]:
+                - link "Electricians in Mumbai Electricians" [ref=e489]:
+                  - /url: /Mumbai/Electricians-in-Kismat-Nagar-Kurla-West/nct-10184166
+                  - generic [ref=e491]:
+                    - img [ref=e493]
+                    - img "Electricians in Mumbai" [ref=e494]
+                  - generic [ref=e495]: Electricians
+        - generic [ref=e497]:
+          - generic [ref=e498]:
+            - generic [ref=e500]:
+              - heading "Bills & Recharge Bharat Connect" [level=2] [ref=e501]:
+                - text: Bills & Recharge
+                - img "Bharat Connect" [ref=e502]
+              - generic [ref=e503]: Pay your bills & recharge instantly with Justdial
+              - link "Explore more in Bills & Recharge" [ref=e504] [cursor=pointer]:
+                - /url: https://www.justdial.com/online-bill-payment
+                - text: Explore More
+            - list [ref=e505]:
+              - listitem "Mobile" [ref=e506] [cursor=pointer]:
+                - link "Online mobile bill payment & recharge Mobile" [ref=e507]:
+                  - /url: /online-bill-payment/mobile-recharge
+                  - generic [ref=e509]:
+                    - img [ref=e511]
+                    - img "Online mobile bill payment & recharge" [ref=e512]
+                  - generic [ref=e513]: Mobile
+              - listitem "Electricity" [ref=e514] [cursor=pointer]:
+                - link "Online payment of electricity bills Electricity" [ref=e515]:
+                  - /url: /online-bill-payment/electricity
+                  - generic [ref=e517]:
+                    - img [ref=e519]
+                    - img "Online payment of electricity bills" [ref=e520]
+                  - generic [ref=e521]: Electricity
+              - listitem "DTH" [ref=e522] [cursor=pointer]:
+                - link "Online DTH payment & recharge DTH" [ref=e523]:
+                  - /url: /online-bill-payment/dth-recharge
+                  - generic [ref=e525]:
+                    - img [ref=e527]
+                    - img "Online DTH payment & recharge" [ref=e528]
+                  - generic [ref=e529]: DTH
+              - listitem "Water" [ref=e530] [cursor=pointer]:
+                - link "Online Water payment Water" [ref=e531]:
+                  - /url: /online-bill-payment/water
+                  - generic [ref=e533]:
+                    - img [ref=e535]
+                    - img "Online Water payment" [ref=e536]
+                  - generic [ref=e537]: Water
+              - listitem "Gas" [ref=e538] [cursor=pointer]:
+                - link "Online Gas payment Gas" [ref=e539]:
+                  - /url: /online-bill-payment/gas
+                  - generic [ref=e541]:
+                    - img [ref=e543]
+                    - img "Online Gas payment" [ref=e544]
+                  - generic [ref=e545]: Gas
+              - listitem "Insurance" [ref=e546] [cursor=pointer]:
+                - link "Online Insurance Insurance" [ref=e547]:
+                  - /url: /online-bill-payment/insurance-premium
+                  - generic [ref=e549]:
+                    - img [ref=e551]
+                    - img "Online Insurance" [ref=e552]
+                  - generic [ref=e553]: Insurance
+          - generic [ref=e554]:
+            - generic [ref=e556]:
+              - heading "Travel Bookings" [level=2] [ref=e557]
+              - generic [ref=e558]: Instant ticket bookings for your best travel experience
+              - link "Explore more in Travel Bookings" [ref=e559] [cursor=pointer]:
+                - /url: Mumbai/95/Travel_fil
+                - text: Explore More
+            - list [ref=e560]:
+              - listitem "Flight" [ref=e561] [cursor=pointer]:
+                - link "Book flight tickets online Flight Powered By Easemytrip.com" [ref=e562]:
+                  - /url: /travel/flight-booking
+                  - generic [ref=e564]:
+                    - img [ref=e566]
+                    - img "Book flight tickets online" [ref=e567]
+                  - generic [ref=e568]: Flight
+                  - generic [ref=e569]: Powered By Easemytrip.com
+              - listitem "Bus" [ref=e570] [cursor=pointer]:
+                - link "Book bus tickets online Bus Affordable Rides" [ref=e571]:
+                  - /url: /travel/Bus-Booking
+                  - generic [ref=e573]:
+                    - img [ref=e575]
+                    - img "Book bus tickets online" [ref=e576]
+                  - generic [ref=e577]: Bus
+                  - generic [ref=e578]: Affordable Rides
+              - listitem "Train" [ref=e579] [cursor=pointer]:
+                - link "Book train tickets online Train" [ref=e580]:
+                  - /url: /Mumbai/Railway-Ticketing-Agents-in-Kismat-Nagar-Kurla-West/nct-10400176
+                  - generic [ref=e582]:
+                    - img [ref=e584]
+                    - img "Book train tickets online" [ref=e585]
+                  - generic [ref=e586]: Train
+              - listitem "Hotel" [ref=e587] [cursor=pointer]:
+                - link "Book hotel online Hotel Budget-friendly Stay" [ref=e588]:
+                  - /url: /Mumbai/Hotels-in-Kismat-Nagar-Kurla-West/nct-10255012
+                  - generic [ref=e590]:
+                    - img [ref=e592]
+                    - img "Book hotel online" [ref=e593]
+                  - generic [ref=e594]: Hotel
+                  - generic [ref=e595]: Budget-friendly Stay
+              - listitem "Car Rentals" [ref=e596] [cursor=pointer]:
+                - link "Book a cab online Car Rentals Drive Easy Anywhere" [ref=e597]:
+                  - /url: /Mumbai/261/Cab-Car-Rental_fil
+                  - generic [ref=e599]:
+                    - img [ref=e601]
+                    - img "Book a cab online" [ref=e602]
+                  - generic [ref=e603]: Car Rentals
+                  - generic [ref=e604]: Drive Easy Anywhere
+        - generic [ref=e606]:
+          - generic [ref=e607]:
+            - heading "Trending Searches Near You NEW" [level=2] [ref=e608]:
+              - text: Trending Searches Near You
+              - generic [ref=e609]: NEW
+            - generic [ref=e610]: Stay updated with the latest local trends.
+          - list [ref=e611]:
+            - generic [ref=e612]:
+              - group "1 / 11" [ref=e613]:
+                - link "Trending Searches Near You - paying guest accommodations for women Paying Guest Accommodations For Women Explore" [ref=e615] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Paying-Guest-Accommodations-For-Women-in-Kismat-Nagar-Kurla-West/nct-11273561
+                  - generic [ref=e617]:
+                    - img [ref=e619]
+                    - img "Trending Searches Near You - paying guest accommodations for women" [ref=e620]
+                  - generic [ref=e621]:
+                    - generic [ref=e622]: Paying Guest Accommodations For Women
+                    - generic [ref=e623]: Explore
+              - group "2 / 11" [ref=e624]:
+                - link "Trending Searches Near You - water parks Water Parks Explore" [ref=e626] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Water-Parks-in-Kismat-Nagar-Kurla-West/nct-10530860
+                  - generic [ref=e628]:
+                    - img [ref=e630]
+                    - img "Trending Searches Near You - water parks" [ref=e631]
+                  - generic [ref=e632]:
+                    - generic [ref=e633]: Water Parks
+                    - generic [ref=e634]: Explore
+              - group "3 / 11" [ref=e635]:
+                - link "Trending Searches Near You - electricians Electricians Explore" [ref=e637] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Electricians-in-Kismat-Nagar-Kurla-West/nct-10184166
+                  - generic [ref=e639]:
+                    - img [ref=e641]
+                    - img "Trending Searches Near You - electricians" [ref=e642]
+                  - generic [ref=e643]:
+                    - generic [ref=e644]: Electricians
+                    - generic [ref=e645]: Explore
+              - group "4 / 11" [ref=e646]:
+                - link "Trending Searches Near You - sonography centres Sonography Centres Explore" [ref=e648] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Sonography-Centres-in-Kismat-Nagar-Kurla-West/nct-10445063
+                  - generic [ref=e650]:
+                    - img [ref=e652]
+                    - img "Trending Searches Near You - sonography centres" [ref=e653]
+                  - generic [ref=e654]:
+                    - generic [ref=e655]: Sonography Centres
+                    - generic [ref=e656]: Explore
+              - group "5 / 11" [ref=e657]:
+                - link "Trending Searches Near You - blue dart express Blue Dart Express Explore" [ref=e659] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Blue-Dart-Express-in-Kismat-Nagar-Kurla-West/nct-12099485
+                  - generic [ref=e661]:
+                    - img [ref=e663]
+                    - img "Trending Searches Near You - blue dart express" [ref=e664]
+                  - generic [ref=e665]:
+                    - generic [ref=e666]: Blue Dart Express
+                    - generic [ref=e667]: Explore
+              - group "6 / 11" [ref=e668]:
+                - link "Trending Searches Near You - urologist doctors Urologist Doctors Explore" [ref=e670] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Urologist-Doctors-in-Kismat-Nagar-Kurla-West/nct-10892687
+                  - generic [ref=e672]:
+                    - img [ref=e674]
+                    - img "Trending Searches Near You - urologist doctors" [ref=e675]
+                  - generic [ref=e676]:
+                    - generic [ref=e677]: Urologist Doctors
+                    - generic [ref=e678]: Explore
+              - group "7 / 11" [ref=e679]:
+                - link "Trending Searches Near You - sexologist doctors Sexologist Doctors Explore" [ref=e681] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Sexologist-Doctors-in-Kismat-Nagar-Kurla-West/nct-10892404
+                  - generic [ref=e683]:
+                    - img [ref=e685]
+                    - img "Trending Searches Near You - sexologist doctors" [ref=e686]
+                  - generic [ref=e687]:
+                    - generic [ref=e688]: Sexologist Doctors
+                    - generic [ref=e689]: Explore
+              - group "8 / 11" [ref=e690]:
+                - link "Trending Searches Near You - car repair & services Car Repair & Services Explore" [ref=e692] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Car-Repair--Services-in-Kismat-Nagar-Kurla-West/nct-10976632
+                  - generic [ref=e694]:
+                    - img [ref=e696]
+                    - img "Trending Searches Near You - car repair & services" [ref=e697]
+                  - generic [ref=e698]:
+                    - generic [ref=e699]: Car Repair & Services
+                    - generic [ref=e700]: Explore
+              - group "9 / 11" [ref=e701]:
+                - link "Trending Searches Near You - gastroenterologists Gastroenterologists Explore" [ref=e703] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Gastroenterologists-in-Kismat-Nagar-Kurla-West/nct-10226406
+                  - generic [ref=e705]:
+                    - img [ref=e707]
+                    - img "Trending Searches Near You - gastroenterologists" [ref=e708]
+                  - generic [ref=e709]:
+                    - generic [ref=e710]: Gastroenterologists
+                    - generic [ref=e711]: Explore
+              - group "10 / 11" [ref=e712]:
+                - link "Trending Searches Near You - cyber cafes Cyber Cafes Explore" [ref=e714] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Cyber-Cafes-in-Kismat-Nagar-Kurla-West/nct-10151835
+                  - generic [ref=e716]:
+                    - img [ref=e718]
+                    - img "Trending Searches Near You - cyber cafes" [ref=e719]
+                  - generic [ref=e720]:
+                    - generic [ref=e721]: Cyber Cafes
+                    - generic [ref=e722]: Explore
+              - group "11 / 11" [ref=e723]:
+                - link "Trending Searches Near You - paying guest accommodations for student Paying Guest Accommodations For Student Explore" [ref=e725] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Paying-Guest-Accommodations-For-Student-in-Kismat-Nagar-Kurla-West/nct-12057018
+                  - generic [ref=e727]:
+                    - img [ref=e729]
+                    - img "Trending Searches Near You - paying guest accommodations for student" [ref=e730]
+                  - generic [ref=e731]:
+                    - generic [ref=e732]: Paying Guest Accommodations For Student
+                    - generic [ref=e733]: Explore
+            - button "Next slide" [ref=e734] [cursor=pointer]
+        - generic [ref=e736]:
+          - link "Latest Movies & Review" [ref=e737] [cursor=pointer]:
+            - /url: /Mumbai/Movies
+            - heading "Latest Movies & Review" [level=2] [ref=e739]
+          - button "swiper" [ref=e741]:
+            - generic [ref=e742]:
+              - group "1 / 36" [ref=e743]:
+                - link "Chand Mera Dil (Hindi Movie) Chand Mera Dil (Hindi Movie) Hindi 2D" [ref=e744] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Chand-Mera-Dil-Hindi-Movie/mct-16255510
+                  - generic [ref=e745]:
+                    - img "Chand Mera Dil (Hindi Movie)" [ref=e749]
+                    - generic "Chand Mera Dil (Hindi Movie)" [ref=e751]
+                    - generic [ref=e752]:
+                      - button "Hindi" [ref=e753]:
+                        - button "Hindi" [ref=e754]
+                      - button "2D" [ref=e756]:
+                        - link "2D" [ref=e757]
+              - group "2 / 36" [ref=e758]:
+                - link "Pati Patni Aur Woh Do (Hindi Movie) 100% Pati Patni Aur Woh Do (Hindi Movie) Hindi 2D" [ref=e759] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Pati-Patni-Aur-Woh-Do-Hindi-Movie/mct-16255536
+                  - generic [ref=e760]:
+                    - generic [ref=e761]:
+                      - img "Pati Patni Aur Woh Do (Hindi Movie)" [ref=e764]
+                      - generic [ref=e766]: 100%
+                    - generic "Pati Patni Aur Woh Do (Hindi Movie)" [ref=e768]
+                    - generic [ref=e769]:
+                      - button "Hindi" [ref=e770]:
+                        - button "Hindi" [ref=e771]
+                      - button "2D" [ref=e773]:
+                        - link "2D" [ref=e774]
+              - group "3 / 36" [ref=e775]:
+                - link "Raja Shivaji 100% Raja Shivaji Marathi 2D" [ref=e776] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Raja-Shivaji-Marathi-Movie/mct-16133910
+                  - generic [ref=e777]:
+                    - generic [ref=e778]:
+                      - img "Raja Shivaji" [ref=e781]
+                      - generic [ref=e783]: 100%
+                    - generic "Raja Shivaji" [ref=e785]
+                    - generic [ref=e786]:
+                      - button "Marathi" [ref=e787]:
+                        - button "Marathi" [ref=e788]
+                      - button "2D" [ref=e790]:
+                        - link "2D" [ref=e791]
+              - group "4 / 36" [ref=e792]:
+                - link "Drishyam 3 Drishyam 3 Malayalam 2D" [ref=e793] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Drishyam-3-Malayalam-Movie/mct-16257850
+                  - generic [ref=e794]:
+                    - img "Drishyam 3" [ref=e798]
+                    - generic "Drishyam 3" [ref=e800]
+                    - generic [ref=e801]:
+                      - button "Malayalam" [ref=e802]:
+                        - button "Malayalam" [ref=e803]
+                      - button "2D" [ref=e805]:
+                        - link "2D" [ref=e806]
+              - group "5 / 36" [ref=e807]:
+                - link "Krishnavataram Part 1 The Heart (Hindi Movie) 100% Krishnavataram Part 1 The Heart (Hindi Movie) Hindi 2D" [ref=e808] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Krishnavataram-Part-1-The-Heart-Hindi-Movie/mct-16274942
+                  - generic [ref=e809]:
+                    - generic [ref=e810]:
+                      - img "Krishnavataram Part 1 The Heart (Hindi Movie)" [ref=e813]
+                      - generic [ref=e815]: 100%
+                    - generic "Krishnavataram Part 1 The Heart (Hindi Movie)" [ref=e817]
+                    - generic [ref=e818]:
+                      - button "Hindi" [ref=e819]:
+                        - button "Hindi" [ref=e820]
+                      - button "2D" [ref=e822]:
+                        - link "2D" [ref=e823]
+              - group "6 / 36" [ref=e824]:
+                - link "Michael 94% Michael English 2D" [ref=e825] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Michael-2026-Film-English-Movie/mct-16227151
+                  - generic [ref=e826]:
+                    - generic [ref=e827]:
+                      - img "Michael" [ref=e830]
+                      - generic [ref=e832]: 94%
+                    - generic "Michael" [ref=e834]
+                    - generic [ref=e835]:
+                      - button "English" [ref=e836]:
+                        - button "English" [ref=e837]
+                      - button "2D" [ref=e839]:
+                        - link "2D" [ref=e840]
+              - group "7 / 36" [ref=e841]:
+                - link "Aakhri Sawal (Hindi Movie) Aakhri Sawal (Hindi Movie) Hindi 2D" [ref=e842] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Aakhri-Sawal-Hindi-Movie/mct-16271605
+                  - generic [ref=e843]:
+                    - img "Aakhri Sawal (Hindi Movie)" [ref=e847]
+                    - generic "Aakhri Sawal (Hindi Movie)" [ref=e849]
+                    - generic [ref=e850]:
+                      - button "Hindi" [ref=e851]:
+                        - button "Hindi" [ref=e852]
+                      - button "2D" [ref=e854]:
+                        - link "2D" [ref=e855]
+              - group "8 / 36" [ref=e856]:
+                - link "Bhooth Bangla (Hindi Movie) 84% Bhooth Bangla (Hindi Movie) Hindi 2D" [ref=e857] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Bhooth-Bangla-Hindi-Movie/mct-16116700
+                  - generic [ref=e858]:
+                    - generic [ref=e859]:
+                      - img "Bhooth Bangla (Hindi Movie)" [ref=e862]
+                      - generic [ref=e864]: 84%
+                    - generic "Bhooth Bangla (Hindi Movie)" [ref=e866]
+                    - generic [ref=e867]:
+                      - button "Hindi" [ref=e868]:
+                        - button "Hindi" [ref=e869]
+                      - button "2D" [ref=e871]:
+                        - link "2D" [ref=e872]
+              - group "9 / 36" [ref=e873]:
+                - link "The Devil Wears Prada 2 (English Movie) 100% The Devil Wears Prada 2 (English Movie) English 2D" [ref=e874] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/The-Devil-Wears-Prada-2-English-Movie/mct-16252151
+                  - generic [ref=e875]:
+                    - generic [ref=e876]:
+                      - img "The Devil Wears Prada 2 (English Movie)" [ref=e879]
+                      - generic [ref=e881]: 100%
+                    - generic "The Devil Wears Prada 2 (English Movie)" [ref=e883]
+                    - generic [ref=e884]:
+                      - button "English" [ref=e885]:
+                        - button "English" [ref=e886]
+                      - button "2D" [ref=e888]:
+                        - link "2D" [ref=e889]
+              - group "10 / 36" [ref=e890]:
+                - link "Karuppu (Tamil Movie) 80% Karuppu (Tamil Movie) Tamil 2D" [ref=e891] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Karuppu-Tamil-Movie/mct-16207745
+                  - generic [ref=e892]:
+                    - generic [ref=e893]:
+                      - img "Karuppu (Tamil Movie)" [ref=e896]
+                      - generic [ref=e898]: 80%
+                    - generic "Karuppu (Tamil Movie)" [ref=e900]
+                    - generic [ref=e901]:
+                      - button "Tamil" [ref=e902]:
+                        - button "Tamil" [ref=e903]
+                      - button "2D" [ref=e905]:
+                        - link "2D" [ref=e906]
+              - group "11 / 36" [ref=e907]:
+                - link "The Sheep Detectives (English Movie) The Sheep Detectives (English Movie) English 2D" [ref=e908] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/The-Sheep-Detectives-English-Movie/mct-16246841
+                  - generic [ref=e909]:
+                    - img "The Sheep Detectives (English Movie)" [ref=e913]
+                    - generic "The Sheep Detectives (English Movie)" [ref=e915]
+                    - generic [ref=e916]:
+                      - button "English" [ref=e917]:
+                        - button "English" [ref=e918]
+                      - button "2D" [ref=e920]:
+                        - link "2D" [ref=e921]
+              - group "12 / 36" [ref=e922]:
+                - link "Deool Band 2 (Marathi Movie) Deool Band 2 (Marathi Movie) Marathi 2D" [ref=e923] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Deool-Band-2-Marathi-Movie/mct-16276240
+                  - generic [ref=e924]:
+                    - img "Deool Band 2 (Marathi Movie)" [ref=e928]
+                    - generic "Deool Band 2 (Marathi Movie)" [ref=e930]
+                    - generic [ref=e931]:
+                      - button "Marathi" [ref=e932]:
+                        - button "Marathi" [ref=e933]
+                      - button "2D" [ref=e935]:
+                        - link "2D" [ref=e936]
+              - group "13 / 36" [ref=e937]:
+                - link "Athiradi (2026 Film) (Malayalam Movie) 100% Athiradi (2026 Film) (Malayalam Movie) Malayalam 2D" [ref=e938] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Athiradi-2026-Film-Malayalam-Movie/mct-16262180
+                  - generic [ref=e939]:
+                    - generic [ref=e940]:
+                      - img "Athiradi (2026 Film) (Malayalam Movie)" [ref=e943]
+                      - generic [ref=e945]: 100%
+                    - generic "Athiradi (2026 Film) (Malayalam Movie)" [ref=e947]
+                    - generic [ref=e948]:
+                      - button "Malayalam" [ref=e949]:
+                        - button "Malayalam" [ref=e950]
+                      - button "2D" [ref=e952]:
+                        - link "2D" [ref=e953]
+              - group "14 / 36" [ref=e954]:
+                - link "Dharpakad (Gujarati Movie) 100% Dharpakad (Gujarati Movie) Gujarati 2D" [ref=e955] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Dharpakad-Gujarati-Movie/mct-16275393
+                  - generic [ref=e956]:
+                    - generic [ref=e957]:
+                      - img "Dharpakad (Gujarati Movie)" [ref=e960]
+                      - generic [ref=e962]: 100%
+                    - generic "Dharpakad (Gujarati Movie)" [ref=e964]
+                    - generic [ref=e965]:
+                      - button "Gujarati" [ref=e966]:
+                        - button "Gujarati" [ref=e967]
+                      - button "2D" [ref=e969]:
+                        - link "2D" [ref=e970]
+              - group "15 / 36" [ref=e971]:
+                - link "Hokum (English Movie) Hokum (English Movie) English 2D" [ref=e972] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Hokum-English-Movie/mct-16266205
+                  - generic [ref=e973]:
+                    - img "Hokum (English Movie)" [ref=e977]
+                    - generic "Hokum (English Movie)" [ref=e979]
+                    - generic [ref=e980]:
+                      - button "English" [ref=e981]:
+                        - button "English" [ref=e982]
+                      - button "2D" [ref=e984]:
+                        - link "2D" [ref=e985]
+              - group "16 / 36" [ref=e986]:
+                - link "Dhurandhar The Revenge (Hindi Movie) 92% Dhurandhar The Revenge (Hindi Movie) Hindi 2D" [ref=e987] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Dhurandhar-The-Revenge-Hindi-Movie/mct-16244449
+                  - generic [ref=e988]:
+                    - generic [ref=e989]:
+                      - img "Dhurandhar The Revenge (Hindi Movie)" [ref=e992]
+                      - generic [ref=e994]: 92%
+                    - generic "Dhurandhar The Revenge (Hindi Movie)" [ref=e996]
+                    - generic [ref=e997]:
+                      - button "Hindi" [ref=e998]:
+                        - button "Hindi" [ref=e999]
+                      - button "2D" [ref=e1001]:
+                        - link "2D" [ref=e1002]
+              - group "17 / 36" [ref=e1003]:
+                - link "Dhabkaaro (Gujarati Movie) 100% Dhabkaaro (Gujarati Movie) Gujarati 2D" [ref=e1004] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Dhabkaaro-Gujarati-Movie/mct-16271610
+                  - generic [ref=e1005]:
+                    - generic [ref=e1006]:
+                      - img "Dhabkaaro (Gujarati Movie)" [ref=e1009]
+                      - generic [ref=e1011]: 100%
+                    - generic "Dhabkaaro (Gujarati Movie)" [ref=e1013]
+                    - generic [ref=e1014]:
+                      - button "Gujarati" [ref=e1015]:
+                        - button "Gujarati" [ref=e1016]
+                      - button "2D" [ref=e1018]:
+                        - link "2D" [ref=e1019]
+              - group "18 / 36" [ref=e1020]:
+                - link "Daadi Ki Shaadi (Hindi Movie) Daadi Ki Shaadi (Hindi Movie) Hindi 2D" [ref=e1021] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Daadi-Ki-Shaadi-Hindi-Movie/mct-16274488
+                  - generic [ref=e1022]:
+                    - img "Daadi Ki Shaadi (Hindi Movie)" [ref=e1026]
+                    - generic "Daadi Ki Shaadi (Hindi Movie)" [ref=e1028]
+                    - generic [ref=e1029]:
+                      - button "Hindi" [ref=e1030]:
+                        - button "Hindi" [ref=e1031]
+                      - button "2D" [ref=e1033]:
+                        - link "2D" [ref=e1034]
+              - group "19 / 36" [ref=e1035]:
+                - link "Baapya (Marathi Movie) Baapya (Marathi Movie) Marathi 2D" [ref=e1036] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Baapya-Marathi-Movie/mct-16269339
+                  - generic [ref=e1037]:
+                    - img "Baapya (Marathi Movie)" [ref=e1041]
+                    - generic "Baapya (Marathi Movie)" [ref=e1043]
+                    - generic [ref=e1044]:
+                      - button "Marathi" [ref=e1045]:
+                        - button "Marathi" [ref=e1046]
+                      - button "2D" [ref=e1048]:
+                        - link "2D" [ref=e1049]
+              - group "20 / 36" [ref=e1050]:
+                - link "Mortal Kombat II 100% Mortal Kombat II English 2D" [ref=e1051] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Mortal-Kombat-Ii-2026-Film-English-Movie/mct-16213293
+                  - generic [ref=e1052]:
+                    - generic [ref=e1053]:
+                      - img "Mortal Kombat II" [ref=e1056]
+                      - generic [ref=e1058]: 100%
+                    - generic "Mortal Kombat II" [ref=e1060]
+                    - generic [ref=e1061]:
+                      - button "English" [ref=e1062]:
+                        - button "English" [ref=e1063]
+                      - button "2D" [ref=e1065]:
+                        - link "2D" [ref=e1066]
+              - group "21 / 36" [ref=e1067]:
+                - link "IIZ Indian Institute Of Zombies (Hindi Movie) IIZ Indian Institute Of Zombies (Hindi Movie) Hindi 2D" [ref=e1068] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Iiz-Indian-Institute-Of-Zombies-Hindi-Movie/mct-16275497
+                  - generic [ref=e1069]:
+                    - img "IIZ Indian Institute Of Zombies (Hindi Movie)" [ref=e1073]
+                    - generic "IIZ Indian Institute Of Zombies (Hindi Movie)" [ref=e1075]
+                    - generic [ref=e1076]:
+                      - button "Hindi" [ref=e1077]:
+                        - button "Hindi" [ref=e1078]
+                      - button "2D" [ref=e1080]:
+                        - link "2D" [ref=e1081]
+              - group "22 / 36" [ref=e1082]:
+                - 'link "Top Gun: Maverick (Imax English Movie) Top Gun: Maverick (Imax English Movie) English 2D" [ref=e1083] [cursor=pointer]':
+                  - /url: https://www.justdial.com/Mumbai/Top-Gun-Maverick-Imax-English-Movie/mct-15126311
+                  - generic [ref=e1084]:
+                    - 'img "Top Gun: Maverick (Imax English Movie)" [ref=e1088]'
+                    - 'generic "Top Gun: Maverick (Imax English Movie)" [ref=e1090]'
+                    - generic [ref=e1091]:
+                      - button "English" [ref=e1092]:
+                        - button "English" [ref=e1093]
+                      - button "2D" [ref=e1095]:
+                        - link "2D" [ref=e1096]
+              - group "23 / 36" [ref=e1097]:
+                - link "Vaanki Chuki Love Story (Gujarati Movie) Vaanki Chuki Love Story (Gujarati Movie) Gujarati 2D" [ref=e1098] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Vaanki-Chuki-Love-Story-Gujarati-Movie/mct-16264346
+                  - generic [ref=e1099]:
+                    - img "Vaanki Chuki Love Story (Gujarati Movie)" [ref=e1103]
+                    - generic "Vaanki Chuki Love Story (Gujarati Movie)" [ref=e1105]
+                    - generic [ref=e1106]:
+                      - button "Gujarati" [ref=e1107]:
+                        - button "Gujarati" [ref=e1108]
+                      - button "2D" [ref=e1110]:
+                        - link "2D" [ref=e1111]
+              - group "24 / 36" [ref=e1112]:
+                - link "Project Hail Mary 100% Project Hail Mary English 2D" [ref=e1113] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Project-Hail-Mary-English-Movie/mct-16210583
+                  - generic [ref=e1114]:
+                    - generic [ref=e1115]:
+                      - img "Project Hail Mary" [ref=e1118]
+                      - generic [ref=e1120]: 100%
+                    - generic "Project Hail Mary" [ref=e1122]
+                    - generic [ref=e1123]:
+                      - button "English" [ref=e1124]:
+                        - button "English" [ref=e1125]
+                      - button "2D" [ref=e1127]:
+                        - link "2D" [ref=e1128]
+              - group "25 / 36" [ref=e1129]:
+                - link "Ladki Bahin (Marathi Movie) Ladki Bahin (Marathi Movie) Marathi 2D" [ref=e1130] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Ladki-Bahin-Marathi-Movie/mct-16276227
+                  - generic [ref=e1131]:
+                    - img "Ladki Bahin (Marathi Movie)" [ref=e1135]
+                    - generic "Ladki Bahin (Marathi Movie)" [ref=e1137]
+                    - generic [ref=e1138]:
+                      - button "Marathi" [ref=e1139]:
+                        - button "Marathi" [ref=e1140]
+                      - button "2D" [ref=e1142]:
+                        - link "2D" [ref=e1143]
+              - group "26 / 36" [ref=e1144]:
+                - link "Gunday (Hindi Movie) 78% Gunday (Hindi Movie) Hindi 2D" [ref=e1145] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Gunday-Hindi-Movie/mct-11233242
+                  - generic [ref=e1146]:
+                    - generic [ref=e1147]:
+                      - img "Gunday (Hindi Movie)" [ref=e1150]
+                      - generic [ref=e1152]: 78%
+                    - generic "Gunday (Hindi Movie)" [ref=e1154]
+                    - generic [ref=e1155]:
+                      - button "Hindi" [ref=e1156]:
+                        - button "Hindi" [ref=e1157]
+                      - button "2D" [ref=e1159]:
+                        - link "2D" [ref=e1160]
+              - group "27 / 36" [ref=e1161]:
+                - link "The Super Mario Galaxy Movie (2026 Film) (Animated English Movie) 80% The Super Mario Galaxy Movie (2026 Film) (Animated English Movie) English 2D" [ref=e1162] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/The-Super-Mario-Galaxy-Movie-2026-Film-Animated-English-Movie/mct-16220572
+                  - generic [ref=e1163]:
+                    - generic [ref=e1164]:
+                      - img "The Super Mario Galaxy Movie (2026 Film) (Animated English Movie)" [ref=e1167]
+                      - generic [ref=e1169]: 80%
+                    - generic "The Super Mario Galaxy Movie (2026 Film) (Animated English Movie)" [ref=e1171]
+                    - generic [ref=e1172]:
+                      - button "English" [ref=e1173]:
+                        - button "English" [ref=e1174]
+                      - button "2D" [ref=e1176]:
+                        - link "2D" [ref=e1177]
+              - group "28 / 36" [ref=e1178]:
+                - link "Lee Cronins The Mummy (English Movie) 60% Lee Cronins The Mummy (English Movie) English 2D" [ref=e1179] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Lee-Cronins-The-Mummy-English-Movie/mct-16250730
+                  - generic [ref=e1180]:
+                    - generic [ref=e1181]:
+                      - img "Lee Cronins The Mummy (English Movie)" [ref=e1184]
+                      - generic [ref=e1186]: 60%
+                    - generic "Lee Cronins The Mummy (English Movie)" [ref=e1188]
+                    - generic [ref=e1189]:
+                      - button "English" [ref=e1190]:
+                        - button "English" [ref=e1191]
+                      - button "2D" [ref=e1193]:
+                        - link "2D" [ref=e1194]
+              - group "29 / 36" [ref=e1195]:
+                - link "Mantra Muugdha (Odia Movie) Mantra Muugdha (Odia Movie) Odia 2D" [ref=e1196] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Mantra-Muugdha-Odia-Movie/mct-16212373
+                  - generic [ref=e1197]:
+                    - img "Mantra Muugdha (Odia Movie)" [ref=e1201]
+                    - generic "Mantra Muugdha (Odia Movie)" [ref=e1203]
+                    - generic [ref=e1204]:
+                      - button "Odia" [ref=e1205]:
+                        - button "Odia" [ref=e1206]
+                      - button "2D" [ref=e1208]:
+                        - link "2D" [ref=e1209]
+              - group "30 / 36" [ref=e1210]:
+                - link "Patriot (Malayalam Movie) 100% Patriot (Malayalam Movie) Malayalam 2D" [ref=e1211] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Patriot-Malayalam-Movie/mct-16253117
+                  - generic [ref=e1212]:
+                    - generic [ref=e1213]:
+                      - img "Patriot (Malayalam Movie)" [ref=e1216]
+                      - generic [ref=e1218]: 100%
+                    - generic "Patriot (Malayalam Movie)" [ref=e1220]
+                    - generic [ref=e1221]:
+                      - button "Malayalam" [ref=e1222]:
+                        - button "Malayalam" [ref=e1223]
+                      - button "2D" [ref=e1225]:
+                        - link "2D" [ref=e1226]
+              - group "31 / 36" [ref=e1227]:
+                - link "Saptadingar Guptodhon (Bengali Movie) Saptadingar Guptodhon (Bengali Movie) Bengali 2D" [ref=e1228] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Saptadingar-Guptodhon-Bengali-Movie/mct-16184590
+                  - generic [ref=e1229]:
+                    - img "Saptadingar Guptodhon (Bengali Movie)" [ref=e1233]
+                    - generic "Saptadingar Guptodhon (Bengali Movie)" [ref=e1235]
+                    - generic [ref=e1236]:
+                      - button "Bengali" [ref=e1237]:
+                        - button "Bengali" [ref=e1238]
+                      - button "2D" [ref=e1240]:
+                        - link "2D" [ref=e1241]
+              - group "32 / 36" [ref=e1242]:
+                - link "Veerabhadrudu (Telugu Movie) Veerabhadrudu (Telugu Movie) Telugu 2D" [ref=e1243] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Veerabhadrudu-Telugu-Movie/mct-16279107
+                  - generic [ref=e1244]:
+                    - img "Veerabhadrudu (Telugu Movie)" [ref=e1248]
+                    - generic "Veerabhadrudu (Telugu Movie)" [ref=e1250]
+                    - generic [ref=e1251]:
+                      - button "Telugu" [ref=e1252]:
+                        - button "Telugu" [ref=e1253]
+                      - button "2D" [ref=e1255]:
+                        - link "2D" [ref=e1256]
+              - group "33 / 36" [ref=e1257]:
+                - link "Jokhad Andhashradechi (Marathi Movie) Jokhad Andhashradechi (Marathi Movie) Marathi 2D" [ref=e1258] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Jokhad-Andhashradechi-Marathi-Movie/mct-16279611
+                  - generic [ref=e1259]:
+                    - img "Jokhad Andhashradechi (Marathi Movie)" [ref=e1263]
+                    - generic "Jokhad Andhashradechi (Marathi Movie)" [ref=e1265]
+                    - generic [ref=e1266]:
+                      - button "Marathi" [ref=e1267]:
+                        - button "Marathi" [ref=e1268]
+                      - button "2D" [ref=e1270]:
+                        - link "2D" [ref=e1271]
+              - group "34 / 36" [ref=e1272]:
+                - link "Main Actor Nahin Hoon (Hindi Movie) Main Actor Nahin Hoon (Hindi Movie) Hindi 2D" [ref=e1273] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Main-Actor-Nahin-Hoon-Hindi-Movie/mct-16272238
+                  - generic [ref=e1274]:
+                    - img "Main Actor Nahin Hoon (Hindi Movie)" [ref=e1278]
+                    - generic "Main Actor Nahin Hoon (Hindi Movie)" [ref=e1280]
+                    - generic [ref=e1281]:
+                      - button "Hindi" [ref=e1282]:
+                        - button "Hindi" [ref=e1283]
+                      - button "2D" [ref=e1285]:
+                        - link "2D" [ref=e1286]
+              - group "35 / 36" [ref=e1287]:
+                - link "Hoppers (Animated English Movie) 100% Hoppers (Animated English Movie) English 2D" [ref=e1288] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Hoppers-Animated-English-Movie/mct-16250380
+                  - generic [ref=e1289]:
+                    - generic [ref=e1290]:
+                      - img "Hoppers (Animated English Movie)" [ref=e1293]
+                      - generic [ref=e1295]: 100%
+                    - generic "Hoppers (Animated English Movie)" [ref=e1297]
+                    - generic [ref=e1298]:
+                      - button "English" [ref=e1299]:
+                        - button "English" [ref=e1300]
+                      - button "2D" [ref=e1302]:
+                        - link "2D" [ref=e1303]
+              - group "36 / 36" [ref=e1304]:
+                - link "Chhatrapati Sambhaji (Marathi Movie) 94% Chhatrapati Sambhaji (Marathi Movie) Marathi 2D" [ref=e1305] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Chhatrapati-Sambhaji-Marathi-Movie/mct-16011411
+                  - generic [ref=e1306]:
+                    - generic [ref=e1307]:
+                      - img "Chhatrapati Sambhaji (Marathi Movie)" [ref=e1310]
+                      - generic [ref=e1312]: 94%
+                    - generic "Chhatrapati Sambhaji (Marathi Movie)" [ref=e1314]
+                    - generic [ref=e1315]:
+                      - button "Marathi" [ref=e1316]:
+                        - button "Marathi" [ref=e1317]
+                      - button "2D" [ref=e1319]:
+                        - link "2D" [ref=e1320]
+            - button "Next slide" [ref=e1321] [cursor=pointer]
+        - generic [ref=e1323]:
+          - heading "Explore Top Tourist Places NEW" [level=2] [ref=e1325]:
+            - text: Explore Top Tourist Places
+            - generic [ref=e1326]: NEW
+          - list [ref=e1327]:
+            - generic [ref=e1328]:
+              - group "1 / 8" [ref=e1329]:
+                - link "Explore Top Tourist Places - mumbai Mumbai Explore" [ref=e1331] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Tourism-Guide
+                  - generic [ref=e1333]:
+                    - img [ref=e1335]
+                    - img "Explore Top Tourist Places - mumbai" [ref=e1336]
+                  - generic [ref=e1337]:
+                    - generic [ref=e1338]: Mumbai
+                    - generic [ref=e1339]: Explore
+              - group "2 / 8" [ref=e1340]:
+                - link "Explore Top Tourist Places - pune Pune Explore" [ref=e1342] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Pune/Tourism-Guide
+                  - generic [ref=e1344]:
+                    - img [ref=e1346]
+                    - img "Explore Top Tourist Places - pune" [ref=e1347]
+                  - generic [ref=e1348]:
+                    - generic [ref=e1349]: Pune
+                    - generic [ref=e1350]: Explore
+              - group "3 / 8" [ref=e1351]:
+                - link "Explore Top Tourist Places - nashik Nashik Explore" [ref=e1353] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Nashik/Tourism-Guide
+                  - generic [ref=e1355]:
+                    - img [ref=e1357]
+                    - img "Explore Top Tourist Places - nashik" [ref=e1358]
+                  - generic [ref=e1359]:
+                    - generic [ref=e1360]: Nashik
+                    - generic [ref=e1361]: Explore
+              - group "4 / 8" [ref=e1362]:
+                - link "Explore Top Tourist Places - ahmedabad Ahmedabad Explore" [ref=e1364] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Ahmedabad/Tourism-Guide
+                  - generic [ref=e1366]:
+                    - img [ref=e1368]
+                    - img "Explore Top Tourist Places - ahmedabad" [ref=e1369]
+                  - generic [ref=e1370]:
+                    - generic [ref=e1371]: Ahmedabad
+                    - generic [ref=e1372]: Explore
+              - group "5 / 8" [ref=e1373]:
+                - link "Explore Top Tourist Places - goa Goa Explore" [ref=e1375] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Goa/Tourism-Guide
+                  - generic [ref=e1377]:
+                    - img [ref=e1379]
+                    - img "Explore Top Tourist Places - goa" [ref=e1380]
+                  - generic [ref=e1381]:
+                    - generic [ref=e1382]: Goa
+                    - generic [ref=e1383]: Explore
+              - group "6 / 8" [ref=e1384]:
+                - link "Explore Top Tourist Places - gokarna Gokarna Explore" [ref=e1386] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Gokarna/Tourism-Guide
+                  - generic [ref=e1388]:
+                    - img [ref=e1390]
+                    - img "Explore Top Tourist Places - gokarna" [ref=e1391]
+                  - generic [ref=e1392]:
+                    - generic [ref=e1393]: Gokarna
+                    - generic [ref=e1394]: Explore
+              - group "7 / 8" [ref=e1395]:
+                - link "Explore Top Tourist Places - ujjain Ujjain Explore" [ref=e1397] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Ujjain/Tourism-Guide
+                  - generic [ref=e1399]:
+                    - img [ref=e1401]
+                    - img "Explore Top Tourist Places - ujjain" [ref=e1402]
+                  - generic [ref=e1403]:
+                    - generic [ref=e1404]: Ujjain
+                    - generic [ref=e1405]: Explore
+              - group "8 / 8" [ref=e1406]:
+                - link "Explore Top Tourist Places - hampi Hampi Explore" [ref=e1408] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Hampi/Tourism-Guide
+                  - generic [ref=e1410]:
+                    - img [ref=e1412]
+                    - img "Explore Top Tourist Places - hampi" [ref=e1413]
+                  - generic [ref=e1414]:
+                    - generic [ref=e1415]: Hampi
+                    - generic [ref=e1416]: Explore
+            - button "Next slide" [ref=e1417] [cursor=pointer]
+        - generic [ref=e1419]:
+          - heading "Popular Searches" [level=2] [ref=e1421]
+          - button "swiper" [ref=e1422]:
+            - generic [ref=e1423]:
+              - group "1 / 10" [ref=e1424]:
+                - generic [ref=e1425] [cursor=pointer]:
+                  - link "Interior Designers photo Interior Designers" [ref=e1426]:
+                    - /url: /Mumbai/Interior-Designers-in-Kismat-Nagar-Kurla-West/nct-10272436
+                    - img "Interior Designers photo" [ref=e1429]
+                    - heading "Interior Designers" [level=3] [ref=e1430]
+                  - button "Enquire Now Interior Designers" [ref=e1432]: Enquire Now
+              - group "2 / 10" [ref=e1433]:
+                - generic [ref=e1434] [cursor=pointer]:
+                  - link "Real Estate Agents photo Real Estate Agents" [ref=e1435]:
+                    - /url: /Mumbai/Real-Estate-Agents-in-Kismat-Nagar-Kurla-West/nct-10192623
+                    - img "Real Estate Agents photo" [ref=e1438]
+                    - heading "Real Estate Agents" [level=3] [ref=e1439]
+                  - button "Enquire Now Real Estate Agents" [ref=e1441]: Enquire Now
+              - group "3 / 10" [ref=e1442]:
+                - generic [ref=e1443] [cursor=pointer]:
+                  - link "Banquet Halls photo Banquet Halls" [ref=e1444]:
+                    - /url: /Mumbai/Banquet-Halls-in-Kismat-Nagar-Kurla-West/nct-10035861
+                    - img "Banquet Halls photo" [ref=e1447]
+                    - heading "Banquet Halls" [level=3] [ref=e1448]
+                  - button "Enquire Now Banquet Halls" [ref=e1450]: Enquire Now
+              - group "4 / 10" [ref=e1451]:
+                - generic [ref=e1452] [cursor=pointer]:
+                  - link "Caterers photo Caterers" [ref=e1453]:
+                    - /url: /Mumbai/Caterers-in-Kismat-Nagar-Kurla-West/nct-10083293
+                    - img "Caterers photo" [ref=e1456]
+                    - heading "Caterers" [level=3] [ref=e1457]
+                  - button "Enquire Now Caterers" [ref=e1459]: Enquire Now
+              - group "5 / 10" [ref=e1460]:
+                - generic [ref=e1461] [cursor=pointer]:
+                  - link "Gynaecologist & Obstetrician Doctors photo Gynaecologist & Obstetrician Doctors" [ref=e1462]:
+                    - /url: /Mumbai/Gynaecologist--Obstetrician-Doctors-in-Kismat-Nagar-Kurla-West/nct-10551087
+                    - img "Gynaecologist & Obstetrician Doctors photo" [ref=e1465]
+                    - heading "Gynaecologist & Obstetrician Doctors" [level=3] [ref=e1466]
+                  - link "Explore Gynaecologist & Obstetrician Doctors" [ref=e1468]:
+                    - /url: /Mumbai/Gynaecologist--Obstetrician-Doctors-in-Kismat-Nagar-Kurla-West/nct-10551087
+                    - text: Explore
+              - group "6 / 10" [ref=e1469]:
+                - generic [ref=e1470] [cursor=pointer]:
+                  - link "Dentists photo Dentists" [ref=e1471]:
+                    - /url: /Mumbai/Dentists-in-Kismat-Nagar-Kurla-West/nct-10156331
+                    - img "Dentists photo" [ref=e1474]
+                    - heading "Dentists" [level=3] [ref=e1475]
+                  - link "Explore Dentists" [ref=e1477]:
+                    - /url: /Mumbai/Dentists-in-Kismat-Nagar-Kurla-West/nct-10156331
+                    - text: Explore
+              - group "7 / 10" [ref=e1478]:
+                - generic [ref=e1479] [cursor=pointer]:
+                  - link "Orthopaedic Doctors photo Orthopaedic Doctors" [ref=e1480]:
+                    - /url: /Mumbai/Orthopaedic-Doctors-in-Kismat-Nagar-Kurla-West/nct-10345039
+                    - img "Orthopaedic Doctors photo" [ref=e1483]
+                    - heading "Orthopaedic Doctors" [level=3] [ref=e1484]
+                  - link "Explore Orthopaedic Doctors" [ref=e1486]:
+                    - /url: /Mumbai/Orthopaedic-Doctors-in-Kismat-Nagar-Kurla-West/nct-10345039
+                    - text: Explore
+              - group "8 / 10" [ref=e1487]:
+                - generic [ref=e1488] [cursor=pointer]:
+                  - link "Physiotherapists photo Physiotherapists" [ref=e1489]:
+                    - /url: /Mumbai/Physiotherapists-in-Kismat-Nagar-Kurla-West/nct-10365744
+                    - img "Physiotherapists photo" [ref=e1492]
+                    - heading "Physiotherapists" [level=3] [ref=e1493]
+                  - link "Explore Physiotherapists" [ref=e1495]:
+                    - /url: /Mumbai/Physiotherapists-in-Kismat-Nagar-Kurla-West/nct-10365744
+                    - text: Explore
+              - group "9 / 10" [ref=e1496]:
+                - generic [ref=e1497] [cursor=pointer]:
+                  - link "Car Rental photo Car Rental" [ref=e1498]:
+                    - /url: /Mumbai/Car-Rental-in-Kismat-Nagar-Kurla-West/nct-10076456
+                    - img "Car Rental photo" [ref=e1501]
+                    - heading "Car Rental" [level=3] [ref=e1502]
+                  - link "Explore Car Rental" [ref=e1504]:
+                    - /url: /Mumbai/Car-Rental-in-Kismat-Nagar-Kurla-West/nct-10076456
+                    - text: Explore
+              - group "10 / 10" [ref=e1505]:
+                - generic [ref=e1506] [cursor=pointer]:
+                  - link "Restaurants photo Restaurants" [ref=e1507]:
+                    - /url: /Mumbai/Restaurants-in-Kismat-Nagar-Kurla-West/nct-10408936
+                    - img "Restaurants photo" [ref=e1510]
+                    - heading "Restaurants" [level=3] [ref=e1511]
+                  - link "Explore Restaurants" [ref=e1513]:
+                    - /url: /Mumbai/Restaurants-in-Kismat-Nagar-Kurla-West/nct-10408936
+                    - text: Explore
+            - button "Next slide" [ref=e1514] [cursor=pointer]
+        - generic [ref=e1516]:
+          - generic [ref=e1517]:
+            - heading "Sunny Day Essentials SEASONAL" [level=2] [ref=e1518]:
+              - text: Sunny Day Essentials
+              - generic [ref=e1519]: SEASONAL
+            - generic [ref=e1520]: Discover wide range of summer collection
+          - list [ref=e1522]:
+            - generic [ref=e1523]:
+              - group "1 / 14" [ref=e1524]:
+                - link "Sunny Day Essentials - ac dealers AC Dealers Explore" [ref=e1526] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/AC-Dealers-in-Kismat-Nagar-Kurla-West/nct-10002268
+                  - generic [ref=e1528]:
+                    - img [ref=e1530]
+                    - img "Sunny Day Essentials - ac dealers" [ref=e1531]
+                  - generic [ref=e1532]:
+                    - generic [ref=e1533]: AC Dealers
+                    - generic [ref=e1534]: Explore
+              - group "2 / 14" [ref=e1535]:
+                - link "Sunny Day Essentials - refrigerator dealers Refrigerator Dealers Explore" [ref=e1537] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Refrigerator-Dealers-in-Kismat-Nagar-Kurla-West/nct-10403876
+                  - generic [ref=e1539]:
+                    - img [ref=e1541]
+                    - img "Sunny Day Essentials - refrigerator dealers" [ref=e1542]
+                  - generic [ref=e1543]:
+                    - generic [ref=e1544]: Refrigerator Dealers
+                    - generic [ref=e1545]: Explore
+              - group "3 / 14" [ref=e1546]:
+                - link "Sunny Day Essentials - air cooler dealers Air Cooler Dealers Explore" [ref=e1548] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Air-Cooler-Dealers-in-Kismat-Nagar-Kurla-West/nct-10010632
+                  - generic [ref=e1550]:
+                    - img [ref=e1552]
+                    - img "Sunny Day Essentials - air cooler dealers" [ref=e1553]
+                  - generic [ref=e1554]:
+                    - generic [ref=e1555]: Air Cooler Dealers
+                    - generic [ref=e1556]: Explore
+              - group "4 / 14" [ref=e1557]:
+                - link "Sunny Day Essentials - caterers for wedding Caterers For Wedding Explore" [ref=e1559] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Caterers-For-Wedding-in-Kismat-Nagar-Kurla-West/nct-10083400
+                  - generic [ref=e1561]:
+                    - img [ref=e1563]
+                    - img "Sunny Day Essentials - caterers for wedding" [ref=e1564]
+                  - generic [ref=e1565]:
+                    - generic [ref=e1566]: Caterers For Wedding
+                    - generic [ref=e1567]: Explore
+              - group "5 / 14" [ref=e1568]:
+                - link "Sunny Day Essentials - soft drink retailers Soft Drink Retailers Explore" [ref=e1570] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Soft-Drink-Retailers-in-Kismat-Nagar-Kurla-West/nct-10443342
+                  - generic [ref=e1572]:
+                    - img [ref=e1574]
+                    - img "Sunny Day Essentials - soft drink retailers" [ref=e1575]
+                  - generic [ref=e1576]:
+                    - generic [ref=e1577]: Soft Drink Retailers
+                    - generic [ref=e1578]: Explore
+              - group "6 / 14" [ref=e1579]:
+                - link "Sunny Day Essentials - sunglass dealers Sunglass Dealers Explore" [ref=e1581] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Sunglass-Dealers-in-Kismat-Nagar-Kurla-West/nct-10463130
+                  - generic [ref=e1583]:
+                    - img [ref=e1585]
+                    - img "Sunny Day Essentials - sunglass dealers" [ref=e1586]
+                  - generic [ref=e1587]:
+                    - generic [ref=e1588]: Sunglass Dealers
+                    - generic [ref=e1589]: Explore
+              - group "7 / 14" [ref=e1590]:
+                - link "Sunny Day Essentials - ac amc AC AMC Explore" [ref=e1592] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/AC-AMC-in-Kismat-Nagar-Kurla-West/nct-10001610
+                  - generic [ref=e1594]:
+                    - img [ref=e1596]
+                    - img "Sunny Day Essentials - ac amc" [ref=e1597]
+                  - generic [ref=e1598]:
+                    - generic [ref=e1599]: AC AMC
+                    - generic [ref=e1600]: Explore
+              - group "8 / 14" [ref=e1601]:
+                - link "Sunny Day Essentials - water cooler repair & services Water Cooler Repair & Services Explore" [ref=e1603] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Water-Cooler-Repair-%26-Services-in-Kismat-Nagar-Kurla-West/nct-10967138
+                  - generic [ref=e1605]:
+                    - img [ref=e1607]
+                    - img "Sunny Day Essentials - water cooler repair & services" [ref=e1608]
+                  - generic [ref=e1609]:
+                    - generic [ref=e1610]: Water Cooler Repair & Services
+                    - generic [ref=e1611]: Explore
+              - group "9 / 14" [ref=e1612]:
+                - link "Sunny Day Essentials - ice cream retailers Ice Cream Retailers Explore" [ref=e1614] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Ice-Cream-Retailers-in-Kismat-Nagar-Kurla-West/nct-10261212
+                  - generic [ref=e1616]:
+                    - img [ref=e1618]
+                    - img "Sunny Day Essentials - ice cream retailers" [ref=e1619]
+                  - generic [ref=e1620]:
+                    - generic [ref=e1621]: Ice Cream Retailers
+                    - generic [ref=e1622]: Explore
+              - group "10 / 14" [ref=e1623]:
+                - link "Sunny Day Essentials - slipper dealers Slipper Dealers Explore" [ref=e1625] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Slipper-Dealers-in-Kismat-Nagar-Kurla-West/nct-10439927
+                  - generic [ref=e1627]:
+                    - img [ref=e1629]
+                    - img "Sunny Day Essentials - slipper dealers" [ref=e1630]
+                  - generic [ref=e1631]:
+                    - generic [ref=e1632]: Slipper Dealers
+                    - generic [ref=e1633]: Explore
+              - group "11 / 14" [ref=e1634]:
+                - link "Sunny Day Essentials - mango fruit retailers Mango Fruit Retailers Explore" [ref=e1636] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Mango-Fruit-Retailers-in-Kismat-Nagar-Kurla-West/nct-10917648
+                  - generic [ref=e1638]:
+                    - img [ref=e1640]
+                    - img "Sunny Day Essentials - mango fruit retailers" [ref=e1641]
+                  - generic [ref=e1642]:
+                    - generic [ref=e1643]: Mango Fruit Retailers
+                    - generic [ref=e1644]: Explore
+              - group "12 / 14" [ref=e1645]:
+                - link "Sunny Day Essentials - badminton racket dealers Badminton Racket Dealers Explore" [ref=e1647] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Badminton-Racket-Dealers-in-Kismat-Nagar-Kurla-West/nct-10031660
+                  - generic [ref=e1649]:
+                    - img [ref=e1651]
+                    - img "Sunny Day Essentials - badminton racket dealers" [ref=e1652]
+                  - generic [ref=e1653]:
+                    - generic [ref=e1654]: Badminton Racket Dealers
+                    - generic [ref=e1655]: Explore
+              - group "13 / 14" [ref=e1656]:
+                - link "Sunny Day Essentials - milkshake shops Milkshake Shops Explore" [ref=e1658] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Milkshake-Shops-in-Kismat-Nagar-Kurla-West/nct-12103495
+                  - generic [ref=e1660]:
+                    - img [ref=e1662]
+                    - img "Sunny Day Essentials - milkshake shops" [ref=e1663]
+                  - generic [ref=e1664]:
+                    - generic [ref=e1665]: Milkshake Shops
+                    - generic [ref=e1666]: Explore
+              - group "14 / 14" [ref=e1667]:
+                - link "Sunny Day Essentials - tower fan dealers Tower Fan Dealers Explore" [ref=e1669] [cursor=pointer]:
+                  - /url: https://www.justdial.com/Mumbai/Tower-Fan-Dealers-in-Kismat-Nagar-Kurla-West/nct-10800520
+                  - generic [ref=e1671]:
+                    - img [ref=e1673]
+                    - img "Sunny Day Essentials - tower fan dealers" [ref=e1674]
+                  - generic [ref=e1675]:
+                    - generic [ref=e1676]: Tower Fan Dealers
+                    - generic [ref=e1677]: Explore
+            - button "Next slide" [ref=e1678] [cursor=pointer]
+    - generic [ref=e1679]: Fetching data...
+    - generic [ref=e1682]:
+      - generic [ref=e1683]:
+        - heading "Follow us on" [level=2] [ref=e1684]
+        - list [ref=e1685]:
+          - listitem [ref=e1686]:
+            - link "Justdial on Facebook" [ref=e1687] [cursor=pointer]:
+              - /url: https://www.facebook.com/JustDial
+          - listitem [ref=e1688]:
+            - link "Justdial on Youtube" [ref=e1689] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/justdialind
+          - listitem [ref=e1690]:
+            - link "Justdial on Instagram" [ref=e1691] [cursor=pointer]:
+              - /url: https://www.instagram.com/jd_justdial
+          - listitem [ref=e1692]:
+            - link "Justdial on LinkedIn" [ref=e1693] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/justdial
+          - listitem [ref=e1694]:
+            - link "Justdial on Twitter" [ref=e1695] [cursor=pointer]:
+              - /url: https://twitter.com/jd_justdial
+        - generic [ref=e1696]:
+          - link "Get it on Google Play" [ref=e1697] [cursor=pointer]:
+            - /url: /JD-ON-MOBILE
+            - generic [ref=e1698]:
+              - img [ref=e1700]
+              - img "Get it on Google Play" [ref=e1701]
+          - link "Download on the App Store" [ref=e1702] [cursor=pointer]:
+            - /url: /JD-ON-MOBILE
+            - generic [ref=e1703]:
+              - img [ref=e1705]
+              - img "Download on the App Store" [ref=e1706]
+      - generic [ref=e1708]:
+        - heading "One-Stop for All Local Businesses" [level=2] [ref=e1710]
+        - generic [ref=e1711]:
+          - paragraph [ref=e1712]: Welcome to Justdial, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, 8888888888 and the fact that we own a strong hold on local business information pan India.
+          - paragraph [ref=e1713]: Our service extends from providing address and contact details of business establishments around the country, to making orders and reservations for leisure, medical, financial, travel and domestic purposes. We enlist business information across varied sectors like Hotels, Restaurants, Auto Care, Home Decor, Personal and Pet Care, Fitness, Insurance, Real Estate, Sports, Schools, etc. from all over the country. Holding information right from major cities like Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Ahmedabad and Pune our reach stretches out to other smaller cities across the country too.
+          - paragraph [ref=e1714]: Our 'Free Listing' feature gives a platform to showcase varied specialities. We then furnish you with the information via phone, SMS, web, App and WAP as well as, create a space for you to share your experiences through our 'Rate & Review' feature. Through the 'Best Deals', 'Last Minute Deals' and 'Live Quotes', we make sure that you are offered the best bargains in the market.
+  - alert [ref=e1715]: Find Businesses Near You on Local Search Engine - Justdial
+```

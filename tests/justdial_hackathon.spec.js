@@ -68,7 +68,7 @@ test('Justdial - Continuous Integrated E2E POM Flow', async () => {
 
     // Go back using your precise application button sequences
     await freeListingPage.navigateBack();
-    await page.waitForTimeout(1000); // ⏱️ Give the home page ample time to re-render from cache
+    await page.waitForTimeout(1500); // ⏱️ Give the home page ample time to re-render from cache
 
     // ---------------------------------------------------------------------
     // PART 1: CAR WASH DATA SCRAPER

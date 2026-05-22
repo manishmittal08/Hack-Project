@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Justdial Production API Integration Tests', () => {
 
-    // ✅ FIXED TEST CASE 1: Using the stable global search suggestions initialization route
+    //  FIXED TEST CASE 1: Using the stable global search suggestions initialization route
     test('TC-01: Should parse search suggestions for text autocomplete parameters', async ({ request }) => {   
         const response = await request.get('https://www.justdial.com/functions/allcity_suggest.php', {
             params: {

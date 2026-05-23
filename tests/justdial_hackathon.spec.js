@@ -47,7 +47,7 @@ test('Justdial - Continuous Integrated E2E POM Flow', async () => {
 
     console.log("Executing Step 2: Interactive Free Listing Submissions...");
     await homePage.clickFreeListing();
-    // await page.waitForTimeout(1000); // ⏱️ Wait for the free listing script chunks to fully hydrate
+     await page.waitForTimeout(1000); // ⏱️ Wait for the free listing script chunks to fully hydrate
 
     // Generate test data layout matching bounds
     const firstDigit = Math.floor(Math.random() * 5) + 1; 
@@ -68,7 +68,7 @@ test('Justdial - Continuous Integrated E2E POM Flow', async () => {
 
     // Go back using your precise application button sequences
     await freeListingPage.navigateBack();
-    await page.waitForTimeout(1000); // ⏱️ Give the home page ample time to re-render from cache
+    await page.waitForTimeout(1500); // ⏱️ Give the home page ample time to re-render from cache
 
     // ---------------------------------------------------------------------
     // PART 1: CAR WASH DATA SCRAPER
@@ -96,7 +96,7 @@ test('Justdial - Continuous Integrated E2E POM Flow', async () => {
     // ---------------------------------------------------------------------
     console.log("\nExecuting Step 3: Gym Option Dataset Extraction...");
     await homePage.clickLogo();
-    //await page.waitForTimeout(1000); // ⏱️ Wait for redirect and cleanup back to home portal
+    await page.waitForTimeout(1000); // ⏱️ Wait for redirect and cleanup back to home portal
     
     await homePage.searchCategory('Gym', 'Gyms near me');
     //await page.waitForTimeout(1000); // ⏱️ Wait for the Gym listing template view to fill

@@ -10,6 +10,7 @@ export class FreeListingPage extends BasePage {
     }
 
     async enterMobileNumber(number) {
+        await this.dismissRandomOverlays();
         await this.mobileInput.waitFor({ state: 'visible', timeout: 5000 });
         await this.mobileInput.pressSequentially(number, { delay: 200 });
     }

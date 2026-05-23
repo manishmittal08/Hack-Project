@@ -1,0 +1,31 @@
+Navigating to Justdial Base Portal...
+Executing Step 2: Interactive Free Listing Submissions...
+Navigation triggered via click
+Number validation error message captured: Please Enter a Valid Mobile Number
+
+Executing Step 1: Car Service Scraper Loop...
+--- Displaying 5 Top Rated Car Wash Services ---
+1. Business Name: Madhuban Toyota
+   Rating Profile: 4.5 ★ (5728 Votes)
+   Phone Number: 09740281311
+--------------------------------------------------
+2. Business Name: Tawakkal Auto Spares
+   Rating Profile: 4.3 ★ (66 Votes)
+   Phone Number: 09035082027
+--------------------------------------------------
+3. Business Name: Modi Hyundai
+   Rating Profile: 4.6 ★ (4726 Votes)
+   Phone Number: Contact info hidden
+--------------------------------------------------
+4. Business Name: Modi Skoda Service Centre
+   Rating Profile: 4.8 ★ (2002 Votes)
+   Phone Number: Contact info hidden
+--------------------------------------------------
+5. Business Name: Excell Autovista Pvt Ltd
+   Rating Profile: 4 ★ (2701 Votes)
+   Phone Number: Contact info hidden
+--------------------------------------------------
+
+Executing Step 3: Gym Option Dataset Extraction...
+----- Sub-menu Items Extracted under Gym -----
+[]

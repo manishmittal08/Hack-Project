@@ -20,6 +20,7 @@ Given('I open the Justdial homepage', async function () {
 
     await this.page.waitForTimeout(3000);
     await homePage.handleBanner();
+    await this.page.waitForTimeout(1000);
 });
 
 
@@ -28,7 +29,7 @@ Given('I open the Justdial homepage', async function () {
 Then('I should see correct page title and logo', async function () {
 
     await expect(this.page).toHaveTitle(/justdial/i);
-    await expect(homePage.logo).toBeVisible();
+    await expect(homePage.logo).toBeVisible({timeout: 5000});
 });
 
 
@@ -36,8 +37,8 @@ Then('I should see correct page title and logo', async function () {
 
 When('I validate search box UI properties', async function () {
 
-    await expect(homePage.searchBox).toBeVisible();
-    await expect(homePage.searchBox).toBeEditable();
+    await expect(homePage.searchBox).toBeVisible({timeout: 5000});
+    await expect(homePage.searchBox).toBeEditable({timeout: 5000});
 
     searchBoxStyles = await homePage.searchBox.evaluate((el) => {
         const styles = window.getComputedStyle(el);
@@ -94,11 +95,12 @@ Then('I should validate form input and error UI', async function () {
 
     // Invalid input
     await freeListingPage.enterMobileNumber("12345");
+    await this.page.waitForTimeout(500);
     await freeListingPage.submitForm();
 
     await this.page.waitForTimeout(2000);
 
-    await expect(freeListingPage.errorTextMsg).toBeVisible();
+    await expect(freeListingPage.errorTextMsg).toBeVisible({timeout: 5000});
 
     const errorColor = await freeListingPage.errorTextMsg.evaluate(
         el => window.getComputedStyle(el).color
@@ -108,6 +110,6 @@ Then('I should validate form input and error UI', async function () {
 
     expect(errorColor).toBeDefined();
 
-    await expect(freeListingPage.startNowButton).toBeVisible();
-    await expect(freeListingPage.startNowButton).toBeEnabled();
+    await expect(freeListingPage.startNowButton).toBeVisible({timeout: 5000});
+    await expect(freeListingPage.startNowButton).toBeEnabled({timeout: 5000});
 });

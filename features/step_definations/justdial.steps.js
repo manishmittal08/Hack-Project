@@ -23,8 +23,10 @@ Given('I launch the Justdial application', async function () {
     await homePage.open();
 
     await expect(page).toHaveTitle(/justdial/i);
+    await this.page.waitForTimeout(3000);
 
     await homePage.handleBanner();
+    await this.page.waitForTimeout(1000);
 });
 
 
@@ -32,6 +34,9 @@ Given('I launch the Justdial application', async function () {
 
 When('I perform free listing flow', async function () {
     console.log("Executing Free Listing Flow...");
+    if (typeof homePage.dismissRandomOverlays === 'function') {
+        await homePage.dismissRandomOverlays();
+    }
 
     await homePage.clickFreeListing();
 
@@ -42,12 +47,14 @@ When('I perform free listing flow', async function () {
     this.generatedNumber = randomNumber;
 
     await freeListingPage.enterMobileNumber(randomNumber);
+    await this.page.waitForTimeout(500);
     await freeListingPage.submitForm();
 
     await expect(this.page).toHaveURL(/justdial\.com/);
 });
 
 Then('I validate mobile number error', async function () {
+    await this.page.waitForTimeout(1000);
     const errorMsg = await freeListingPage.getErrorMessage();
 
     console.log("Validation message:", errorMsg);
@@ -55,6 +62,7 @@ Then('I validate mobile number error', async function () {
     expect(errorMsg.trim().length).toBeGreaterThan(0);
 
     await freeListingPage.navigateBack();
+    await this.page.waitForTimeout(2000);
 });
 
 
@@ -62,10 +70,14 @@ Then('I validate mobile number error', async function () {
 
 When('I extract car service data', async function () {
     console.log("Extracting Car Services...");
+    if (typeof homePage.dismissRandomOverlays === 'function') {
+        await homePage.dismissRandomOverlays();
+    }
 
     await homePage.searchCategory('Car Service', 'Car Service Centres Category');
-
+    await this.page.waitForTimeout(2000);
     await carWashPage.applyFilters();
+    await this.page.waitForTimeout(2000);
 
     services = await carWashPage.extractTopListings(5);
 });
@@ -89,10 +101,16 @@ When('I extract gym dropdown data', async function () {
     console.log("Extracting Gym Data...");
 
     await homePage.clickLogo();
+    await this.page.waitForTimeout(2000); 
+
+    if (typeof homePage.dismissRandomOverlays === 'function') {
+        await homePage.dismissRandomOverlays();
+    }
 
     await homePage.searchCategory('Gym', 'Gyms near me');
-
+    await this.page.waitForTimeout(2000);
     await fitnessPage.expandGymSubMenu();
+    await this.page.waitForTimeout(2000);
 
     subMenuOptions = await fitnessPage.getSubMenuOptions();
 });

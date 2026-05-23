@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "test:cucumber": "cucumber-js"
+    "test:cucumber": "cucumber-js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
-  ,
-  "type":"module",
+  "type": "module",
   "devDependencies": {
     "@cucumber/cucumber": "^12.9.0",
     "@playwright/test": "^1.60.0",
@@ -23,6 +21,5 @@
     "allure-playwright": "^3.9.0",
     "playwright-extra": "^4.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2"
- 
   }
-  }
+}
